@@ -1,6 +1,6 @@
 /// <reference types="cypress" />
 const allPosion = '#app > :nth-child(2)'
-const con = 'New Reservation'
+const cresvverification = 'New Reservation'
 const startPosion = ':nth-child(1) > input' 
 const startLabelP = ':nth-child(1) > label'
 const start = '2020-11-01'
@@ -23,10 +23,14 @@ const id = 'ID: 2'
 const idLabel = 'Bill'
 const saveButton = '.blue'
 
-function creatReservation(cy){      
-cy.get(allPosion).should('contain',con)
-       // cy.contains('New Reservation')
-        // Creat reservation cy.get('h2 > .btn')
+function creatReservation(cy,allPosion,cresvverification,
+    startLabelP,startLabel,startPosion,start,
+    endLabelP,endLabel,endPosion,end,
+    clientLabelP,clientLabel,clientPosion,client,
+    roomLabelP,roomLabel,roomPosion,room,
+    idLabelP,idLabel,idPosion,id,
+    saveButton){      
+cy.get(allPosion).should('contain',cresvverification)
         // Start (Format YYYY-MM-DD)
             cy.get(startLabelP).should('contain',startLabel)
             cy.get(startPosion).type(start)
@@ -42,8 +46,7 @@ cy.get(allPosion).should('contain',con)
         // Bill "ID: 2" 
             cy.get(idLabelP).should('contain',idLabel)
             cy.get(idPosion).select(id)
-        // Back Save 
-        //cy.get('[href="/reservations"]').click()   
+        // Back Save  
             cy.get(saveButton).click() 
         }
 

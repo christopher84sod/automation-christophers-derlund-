@@ -1,6 +1,7 @@
 /// <reference types="cypress" />
 
 // Elements
+/*
 const home = 'http://localhost:3000/' 
 const userName = 'tester01'
 const userPasswords = 'GteteqbQQgSr88SwNExUQv2ydb7xuf8c'
@@ -9,21 +10,22 @@ const userPasswordsPosition = ':nth-child(2) > input'
 const indexTitle = 'Testers Hotel'
 const indexLoginButton ='.btn'
 const dashuserNamePosition = '.username'
-
+*/
 
 // Action / Functions
-function preformLogIn(cy){
+function preformLogIn(cy,home,userNamePosition,userName,userPasswordsPosition,userPasswords,
+    indexLoginButton,indexTitle,dashuserNamePosition){
     cy.visit(home)
-    checkTitle(cy)
+    checkTitle(cy,indexTitle)
     cy.get(userNamePosition).type(userName)
     cy.get(userPasswordsPosition).type(userPasswords)
     cy.get(indexLoginButton).click()
-    checkUser(cy)
+    checkUser(cy,dashuserNamePosition,userName)
 }
-function checkTitle(cy){
+function checkTitle(cy,indexTitle){
    cy.title().should('eq', indexTitle)
 }
-function checkUser(cy){
+function checkUser(cy,dashuserNamePosition,userName){
     cy.get(dashuserNamePosition).should('contain',userName)
 } 
 // Exports
