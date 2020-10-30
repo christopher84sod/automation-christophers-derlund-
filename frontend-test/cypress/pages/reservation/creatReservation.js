@@ -1,27 +1,4 @@
 /// <reference types="cypress" />
-const allPosion = '#app > :nth-child(2)'
-const cresvverification = 'New Reservation'
-const startPosion = ':nth-child(1) > input' 
-const startLabelP = ':nth-child(1) > label'
-const start = '2020-11-01'
-const startLabel = 'Start (Format YYYY-MM-DD)'
-const endPosion = ':nth-child(2) > input'
-const endLabelP = ':nth-child(2) > label'
-const end = '2021-01-22'
-const endLabel = 'End (Format YYYY-MM-DD)'
-const clientPosion = ':nth-child(3) > select' 
-const clientLabelP = ':nth-child(3) > label'
-const client =   'Test Testsson (#3)'
-const clientLabel = 'Client'
-const roomPosion =  ':nth-child(4) > select'
-const roomLabelP = ':nth-child(4) > label'
-const room =      'Floor 5, Room 103'  
-const roomLabel =  'Room'
-const idPosion =  ':nth-child(5) > select'
-const idLabelP = ':nth-child(5) > label'
-const id = 'ID: 2'
-const idLabel = 'Bill'
-const saveButton = '.blue'
 
 function creatReservation(cy,allPosion,cresvverification,
     startLabelP,startLabel,startPosion,start,

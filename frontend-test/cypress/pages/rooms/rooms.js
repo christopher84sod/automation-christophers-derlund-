@@ -14,7 +14,6 @@ function deleteRoom(cy,alldiv,roomnew,roomimgP ,deleteP){
     cy.get(deleteP).click() // Delete
     cy.get(alldiv).should('not.contain',roomnew)
 } 
-
 function checkIfCreated(cy,number){
     cy.contains(number)
 } 

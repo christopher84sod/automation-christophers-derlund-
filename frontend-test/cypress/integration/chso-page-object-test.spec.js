@@ -33,7 +33,6 @@ describe('Test Suit01', function(){
            dash.goToARooms(cy,target.roomButton,target.verification)  
            room.goOut(cy,target.creatbutton,target.Roomcreatbutton,target.goOUTofRoom)
            dash.goToARooms(cy,target.billButton,target.verification)
-           
            bill.goOut(cy,target.creatbutton,target.Billverification,target.goOUTofRoom)
            dash.goToARooms(cy,target.clientButton,target.verification)
            clients.goOut(cy,target.creatbutton,target.Clientverification,target.goOUTofRoom)
@@ -46,15 +45,12 @@ describe('Test Suit01', function(){
             index.preformLogIn(cy,target.home,target.userNamePosition,target.userName,target.userPasswordsPosition,
                 target.userPasswords,target.indexLoginButton,target.indexTitle,target.dashuserNamePosition)
             dash.goToARooms(cy,target.roomButton,target.verification)
-             room.goInCreatRoom(cy,target.creatbutton,target.Roomcreatbutton) // Går in i "Creat rooms"
-           
-             croom.creatRoom(cy,target.categoryPosion,target.category,target.numberPosion,target.number,
+            room.goInCreatRoom(cy,target.creatbutton,target.Roomcreatbutton) // Går in i "Creat rooms"
+            croom.creatRoom(cy,target.categoryPosion,target.category,target.numberPosion,target.number,
                 target.floorPosion,target.floor,
                 target.availablePosion,target.pricePosion,target.price,
                 target.featuresPosion,target.features,target.saveButton)
-            
-            
-            room.checkIfCreated(cy,target.number)
+          room.checkIfCreated(cy,target.number)
           dash.Logout(cy,target.dashLogOutPosition,target.indexTitle)    
            // Loga ut
         }) 
@@ -117,25 +113,25 @@ describe('Test Suit01', function(){
             index.preformLogIn(cy,target.home,target.userNamePosition,target.userName,target.userPasswordsPosition,
                 target.userPasswords,target.indexLoginButton,target.indexTitle,target.dashuserNamePosition)
         
-                dash.goToARooms(cy,target.roomButton,target.verification)  
-           eroom.edit(cy,target.alldiv,target.room,target.roomimgP,target.editP,target.edroomP,
-            target.oldroomnr,target.roomnew,target.saveButton)
-           room.goOut(cy,target.creatbutton,target.Roomcreatbutton,target.goOUTofRoom) 
+            dash.goToARooms(cy,target.roomButton,target.verification)  
+            eroom.edit(cy,target.alldiv,target.room,target.roomimgP,target.editP,target.edroomP,
+                target.oldroomnr,target.roomnew,target.saveButton)
+            room.goOut(cy,target.creatbutton,target.Roomcreatbutton,target.goOUTofRoom) 
 
-          dash.goToARooms(cy,target.billButton,target.verification)
+            dash.goToARooms(cy,target.billButton,target.verification)
             ebill.edit(cy,target.alldiv,target.bill,target.billimgP,
                 target.editP,target.edbillP,target.oldValue,target.billnew,target.saveButton)
-           bill.goOut(cy,target.creatbutton,target.Billverification,target.goOUTofRoom) 
+            bill.goOut(cy,target.creatbutton,target.Billverification,target.goOUTofRoom) 
          
             dash.goToARooms(cy,target.clientButton,target.verification)
-           eclient.edit(cy,target.alldiv,target.name,target.clientimgP,
-            target.editP,target.edClientP,target.newclient,target.saveButton)
-           clients.goOut(cy,target.creatbutton,target.Clientverification,target.goOUTofRoom)
+            eclient.edit(cy,target.alldiv,target.name,target.clientimgP,
+                target.editP,target.edClientP,target.newclient,target.saveButton)
+            clients.goOut(cy,target.creatbutton,target.Clientverification,target.goOUTofRoom)
          
            dash.goToARooms(cy,target.reservationButton,target.verification)
            ereserv.edit(cy,target.alldiv,target.newclient,target.imgP,
-            target.editP,target.edstartP,target.oldstart,target.newstart,
-            target.edendP,target.oldend,target.newend,target.saveButton)
+                target.editP,target.edstartP,target.oldstart,target.newstart,
+                target.edendP,target.oldend,target.newend,target.saveButton)
            reserv.goOut(cy,target.creatbutton,target.resVerification ,target.goOUTofRoom)
            dash.Logout(cy,target.dashLogOutPosition,target.indexTitle)    
             
@@ -154,8 +150,8 @@ describe('Test Suit01', function(){
            clients.deleteClient(cy,target.alldiv,target.newclient,target.clientimgP,target.deleteP)
            clients.goOut(cy,target.creatbutton,target.Clientverification,target.goOUTofRoom) 
         
-         dash.goToARooms(cy,target.billButton,target.verification)
-          bill.deleteBill(cy,target.alldiv,target.bill,target.billimgP ,target.deleteP)
+           dash.goToARooms(cy,target.billButton,target.verification)
+           bill.deleteBill(cy,target.alldiv,target.bill,target.billimgP ,target.deleteP)
            bill.goOut(cy,target.creatbutton,target.Billverification,target.goOUTofRoom) 
 
 
@@ -164,9 +160,5 @@ describe('Test Suit01', function(){
            room.goOut(cy,target.creatbutton,target.Roomcreatbutton,target.goOUTofRoom)
            dash.Logout(cy,target.dashLogOutPosition,target.indexTitle)    
             
-            
-          
             })
-        
-
         })

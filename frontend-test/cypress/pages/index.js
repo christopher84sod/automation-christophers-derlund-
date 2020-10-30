@@ -1,17 +1,4 @@
 /// <reference types="cypress" />
-
-// Elements
-/*
-const home = 'http://localhost:3000/' 
-const userName = 'tester01'
-const userPasswords = 'GteteqbQQgSr88SwNExUQv2ydb7xuf8c'
-const userNamePosition =':nth-child(1) > input'
-const userPasswordsPosition = ':nth-child(2) > input'
-const indexTitle = 'Testers Hotel'
-const indexLoginButton ='.btn'
-const dashuserNamePosition = '.username'
-*/
-
 // Action / Functions
 function preformLogIn(cy,home,userNamePosition,userName,userPasswordsPosition,userPasswords,
     indexLoginButton,indexTitle,dashuserNamePosition){
@@ -32,13 +19,3 @@ function checkUser(cy,dashuserNamePosition,userName){
 module.exports = {
     preformLogIn,checkTitle,checkUser
     }
-/* ****  PSUDO COD
-            *** Loga in ut ***
-     gå till localhost3000
-      kolla title
-   skriv in namn
-skriv in lösenord
-tryck "loga in"
-kolla username
-klick loga ut
-kolla title */

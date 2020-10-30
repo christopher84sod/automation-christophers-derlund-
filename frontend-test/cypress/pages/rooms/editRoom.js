@@ -1,6 +1,5 @@
 /// <reference types="cypress" />
 
-
 // Edit Room
 function edit(cy,alldiv,room,roomimgP,editP,edroomP,oldroomnr,roomnew,saveButton){
     cy.get(alldiv).should('contain',room)

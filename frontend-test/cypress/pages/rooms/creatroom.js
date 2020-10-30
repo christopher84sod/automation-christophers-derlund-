@@ -1,6 +1,5 @@
 /// <reference types="cypress" />
 
-
 function creatRoom(cy,categoryPosion,category,numberPosion,number,floorPosion,floor,
     availablePosion,pricePosion,price,featuresPosion,features,saveButton){
         // Category  
@@ -18,7 +17,6 @@ function creatRoom(cy,categoryPosion,category,numberPosion,number,floorPosion,fl
             /// Creat room 
             cy.get(saveButton).click()
 }
-
 
 module.exports = {
 creatRoom

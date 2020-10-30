@@ -1,17 +1,5 @@
 /// <reference types="cypress" />
 
-// Element
-/*
-const goOUTofRoom = 'a.btn:nth-child(1)'
-const creatbutton = 'h2 > .btn'
-const con = 'Create Bill'
-const bill = 'ID: 2'
-const alldiv = 'div'
-const imgP = ':nth-child(2) > .action'
-const deleteP = '.menu > :nth-child(2)'
-const editP = '.menu > :nth-child(1)' */
-// Edit Room
-
 // Function
 
 function goOut(cy,creatbutton,con,goOUTofRoom){
